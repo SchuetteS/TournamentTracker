@@ -8,7 +8,8 @@ namespace TrackerLibrary
 {
     public class TeamModel
     {
-        public List<Person> TeamMembers { get; set; } = new List<Person>();
+        // TODO - Change PersonModel back to Person if necessary.
+        public List<PersonModel> TeamMembers { get; set; } = new List<PersonModel>();
         public string TeamName { get; set; }
 
     }
