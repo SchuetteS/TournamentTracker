@@ -18,11 +18,21 @@ namespace TrackerLibrary.DataAccess.TextHelpers
 {
     public static class TextConnectorProcessor
     {
+        /// <summary>
+        /// Extension method to add the file name to a string with the file path.
+        /// </summary>
+        /// <param name="fileName"></param>
+        /// <returns></returns>
         public static string FullFilePath(this string fileName)
         {
             return $"{ ConfigurationManager.AppSettings["filePath"] }\\{ fileName }";
         }
 
+        /// <summary>
+        /// Extension method to load a csv file and convert it into a list.
+        /// </summary>
+        /// <param name="file"></param>
+        /// <returns></returns>
         public static List<string> LoadFile(this string file)
         {
             if (!File.Exists(file)) 
@@ -33,6 +43,11 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return File.ReadAllLines(file).ToList();
         }
 
+        /// <summary>
+        /// Extension method to take in a list of a csv file and convert it into a list of PrizeModel.
+        /// </summary>
+        /// <param name="lines"></param>
+        /// <returns></returns>
         public static List<PrizeModel> ConvertToPrizeModels(this List<string> lines)
         {
             List<PrizeModel> output = new List<PrizeModel>();
@@ -53,6 +68,26 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             return output;
         }
 
+        public static List<PersonModel> ConvertToPersonModels(this List<string> lines)
+        {
+            List<PersonModel> output = new List<PersonModel>();
+
+            foreach (string line in lines)
+            {
+                string[] cols = line.Split(',');
+
+                PersonModel p = new PersonModel();
+                p.Id = int.Parse(cols[0]);
+                p.FirstName = cols[1];
+                p.LastName = cols[2];
+                p.EmailAdress = cols[3];
+                p.CellphoneNumber = cols[4];
+                output.Add(p);
+            }
+
+            return output;
+        }
+
         public static void SaveToPrizeFile(this List<PrizeModel> models, string fileName)
         {
             List<string> lines = new List<string>();
@@ -60,6 +95,18 @@ namespace TrackerLibrary.DataAccess.TextHelpers
             foreach (PrizeModel p in models)
             {
                 lines.Add($"{ p.Id },{ p.PlaceNumber },{ p.PlaceName },{ p.PrizeAmount },{ p.PrizePercentage }");
+            }
+
+            File.WriteAllLines(fileName.FullFilePath(), lines);
+        }
+
+        public static void SaveToPeopleFile(this List<PersonModel> models, string fileName)
+        {
+            List<string> lines = new List<string>();
+
+            foreach (PersonModel p in models)
+            {
+                lines.Add($"{ p.Id },{ p.FirstName },{ p.LastName },{ p.EmailAdress },{ p.CellphoneNumber }");
             }
 
             File.WriteAllLines(fileName.FullFilePath(), lines);
