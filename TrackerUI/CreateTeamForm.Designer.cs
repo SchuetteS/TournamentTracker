@@ -267,6 +267,7 @@
             this.createTeamButton.TabIndex = 25;
             this.createTeamButton.Text = "Create Team";
             this.createTeamButton.UseVisualStyleBackColor = true;
+            this.createTeamButton.Click += new System.EventHandler(this.createTeamButton_Click);
             // 
             // CreateTeamForm
             // 
@@ -289,7 +290,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Name = "CreateTeamForm";
-            this.Text = "CreateTeamForm";
+            this.Text = " ";
             this.addNewMemberGroupbox.ResumeLayout(false);
             this.addNewMemberGroupbox.PerformLayout();
             this.ResumeLayout(false);
