@@ -1,0 +1,73 @@
+[33mcommit 0b117d3871b789ce9cdd671cad2b8332d9cd1741[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sat Dec 28 13:41:58 2019 +0100
+
+    C# App Start To Finish Lesson 15 - Create Tournament Form Part 1
+
+[33mcommit 18d6ce68cbb90249ade04aba2c790fb916786006[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Fri Dec 27 17:40:38 2019 +0100
+
+    C# App Start To Finish Lesson 14 - Create Team Form Part 3
+
+[33mcommit bd5462d7879d88a0259c2c216e1c2ec58de63890[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Tue Dec 24 17:41:25 2019 +0100
+
+    C# App Start To Finish Lesson 13 - Create Team Form Part 2
+
+[33mcommit d74d7803de9a3ef76f906dc4c15db07391d6d1da[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Fri Dec 13 20:19:23 2019 +0100
+
+    C# App Start To Finish Lesson 12 - Create Team Form Part 1
+
+[33mcommit 4b6730f5696aca028a20dea0b93047cf46e991d0[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Thu Dec 12 22:09:16 2019 +0100
+
+    C# App Start To Finish Lesson 11 - Text Connection
+
+[33mcommit 306f12a5082c296d5181ce933fdbd3f3a6d6fde1[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Wed Dec 11 19:33:47 2019 +0100
+
+    C# App Start To Finish Lesson 10 - SQL Connection
+
+[33mcommit c15cecc4b5b41dd3be4e34dda72bb92a821e001e[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sun Dec 8 11:40:24 2019 +0100
+
+    C# App Start To Finish Lesson 09 - Prize Form Wire Up
+    
+    Revert "Revert "Projektdateien hinzufügen.""
+    
+    This reverts commit 6a732a0c01feff4bf3872d20acb7548e05fe166a.
+
+[33mcommit 82609a32b9dfe169ff3735456479c33c7a3104e7[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sat Dec 7 17:41:03 2019 +0100
+
+    Revert "Revert "Projektdateien hinzufügen.""
+    
+    This reverts commit 6a732a0c01feff4bf3872d20acb7548e05fe166a.
+
+[33mcommit 6a732a0c01feff4bf3872d20acb7548e05fe166a[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sat Dec 7 17:39:07 2019 +0100
+
+    Revert "Projektdateien hinzufügen."
+    
+    This reverts commit 0e6a4d5259319489d6941057df0cf707a0e31bbb.
+
+[33mcommit 0e6a4d5259319489d6941057df0cf707a0e31bbb[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sat Dec 7 15:53:30 2019 +0100
+
+    Projektdateien hinzufügen.
+
+[33mcommit a3333adf44904307584f39844dadd8cee3145a0e[m
+Author: Sebastian <seb.schuette@gmail.com>
+Date:   Sat Dec 7 15:53:28 2019 +0100
+
+    GITIGNORE und GITATTRIBUTES hinzufügen.
