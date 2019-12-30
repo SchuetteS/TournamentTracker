@@ -100,7 +100,7 @@ namespace TrackerUI
             if (p != null)
             {
                 selectedPrizes.Remove(p);
-                // availablePrizes.Add(p) is not neccesary, because the prizes won't be reused
+                // availablePrizes.Add(p) - is not neccesary, because the prizes won't be reused
 
                 WireUpLists();
             }
@@ -136,6 +136,7 @@ namespace TrackerUI
             tm.EnteredTeams = selectedTeams;
 
             // TODO - Wire our matchups
+            TournamentLogic.CreateRounds(tm);
 
             // Create Tournament entry
             // Create all of the prizes entries
